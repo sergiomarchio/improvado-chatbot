@@ -1,0 +1,60 @@
+ @import "main.css";
+
+ :root {
+    --chat-width: 50vw;
+    --chat-height: 80%;
+}
+
+
+#clear {
+    color: var(--link-color);
+    font-size: calc(2 * var(--font-size));
+    margin-right: 0.5em;
+    margin-left: auto;
+    alignment: right;
+    text-decoration: none;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100px;
+    width: var(--chat-width);
+    height: var(--chat-height);
+}
+
+.chat-box .content-box {
+    flex-grow: 1;
+}
+
+.bot {
+    align-self: flex-start;
+    background: var(--bot-color);
+}
+
+.user {
+    align-self: flex-end;
+    background: var(--user-color);
+    text-align: right;
+}
+
+#end-marker {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.chat-form {
+    align-items: center;
+    display: flex;
+    margin: 3px;
+}
+
+#submit {
+    aspect-ratio: 1/1;
+    background: var(--user-color);
+    font-size: var(--font-size);
+    height: 100%;
+}
+
